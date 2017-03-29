@@ -96,7 +96,7 @@ $(eval $(call Profile,QSDK_IOE_TEST))
 define Profile/QSDK_Premium_Beeliner_Router
 	$(Profile/QSDK_Base)
 	NAME:=Qualcomm-Atheros SDK Premium Beeliner Router Profile
-	PACKAGES+= -kmod-ath9k -kmod-ath5k -kmod-ath -wpad-mini luci-app-samba \
+	PACKAGES+= -kmod-ath9k -kmod-ath5k -kmod-ath -wpad-mini \
 	  $(STORAGE) $(WIFI_10_4_PKGS) $(WIFI_10_4_FW_PKGS) \
 	  $(SWITCH_SSDK_HNAT_PKGS) $(UBOOT_PKGS) $(HYFI) \
 	  mtd-utils mtd-utils-nandwrite
